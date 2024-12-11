@@ -1,0 +1,35 @@
+###
+
+GET http://localhost:8080/notes
+
+###
+
+GET http://localhost:8080/notes/1
+
+###
+
+POST http://localhost:8080/notes
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuY29tIiwiZXhwIjoxNzMzOTI1Njk3LCJ1c2VySWQiOjJ9.2NI4-3iCSMNJDOvxYlnN0KSuVlAymIe6inGuJxP_gMc
+
+{
+  "title": "Learning",
+  "description":"Go",
+  "creationDate":"2025-01-01T15:30:00.000Z"
+}
+
+###
+
+PUT http://localhost:8080/notes/4
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE3MzM5MjcwNDIsInVzZXJJZCI6MX0.yCEGkv4I80X5VjFDxbhTAnTeqh8RWdjAtY9KSQCTEHg
+
+{
+  "description":"Go, Flutter"
+}
+
+
+###
+
+DELETE http://localhost:8080/notes/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJleHAiOjE3MzM5MjcyNjksInVzZXJJZCI6MX0.LOvWX-RqBG_IAHNmKvY3DzE2wxEeln-G978eCMIegWU
